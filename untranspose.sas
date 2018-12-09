@@ -5,7 +5,7 @@
   *
   * AUTHORS: Arthur Tabachneck, Gerhard Svolba, Joe Matise and Matt Kastin
   * CREATED: September 25, 2017
-  * MODIFIED: September 10, 2018
+  * MODIFIED: December 8, 2018
 
   Parameter Descriptions:
 
@@ -290,7 +290,7 @@
   %end;
 
   data _null_;
-    length forexec $255;
+    length forexec $5000;
     set t_e_m_p end=lastone;
     by id_value;
     %if %length(&id) lt 1 %then %do;
